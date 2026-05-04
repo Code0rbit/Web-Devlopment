@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<library>
+<book id = "001">
+<title>Learning XML</title>
+<author>John smith</author>
+<year>2020</year>
+</book>
+<book id = "002">
+<title>Learning HTML</title>
+<author>Tim-Berners Lee</author>
+<year>2014</year>
+</book>
+<book id = "003">
+<title>Learning CSS</title>
+<author>Sakshi Jadhav</author>
+<year>2016</year>
+</book>
+<book id = "004">
+<title>Learning javascript</title>
+<author>Shruti Salunkhe</author>
+<year>2020</year>
+</book>
+</library>
