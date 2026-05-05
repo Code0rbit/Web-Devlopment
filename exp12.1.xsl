@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:template match="/">
-        <html>
-        <head>
-            <style>
-                table { border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; }
-                th { background-color: #4CAF50; color: white; padding: 10px; }
-                td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-                tr:nth-child(even) { background-color: #f2f2f2; }
-                h2 { color: #333; }
-            </style>
-        </head>
-        <body>
-            <h2>Enrolled Students List</h2>
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Course</th>
-                </tr>
-                <!-- Loop through each student node -->
-                <xsl:for-each select="students/student">
-                <tr>
-                    <td><xsl:value-of select="name"/></td>
-                    <td><xsl:value-of select="age"/></td>
-                    <td><xsl:value-of select="course"/></td>
-                </tr>
-                </xsl:for-each>
-            </table>
-        </body>
-        </html>
-    </xsl:template>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+
+<xsl:template match="/">
+
+<html>
+<body style="background-color: yellow; font-family: Arial;">
+
+    <!-- Heading -->
+    <h2 style="color: red;">
+        <xsl:value-of select="books/heading"/>
+    </h2>
+
+    <!-- Loop for each book -->
+    <xsl:for-each select="books/book">
+
+        <div style="background-color: white; padding:10px; margin:10px; border-radius:10px;">
+            
+            <p><b>Title:</b> <xsl:value-of select="title"/></p>
+            <p><b>Author:</b> <xsl:value-of select="author"/></p>
+            <p><b>Publisher:</b> <xsl:value-of select="publisher"/></p>
+            <p><b>Edition:</b> <xsl:value-of select="edition"/></p>
+            <p><b>Price:</b> <xsl:value-of select="price"/></p>
+
+        </div>
+
+    </xsl:for-each>
+
+</body>
+</html>
+
+</xsl:template>
 
 </xsl:stylesheet>
