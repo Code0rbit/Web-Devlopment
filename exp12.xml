@@ -1,16 +1,46 @@
-<?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="student.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="exp12.1.xsl"?>
+<books>
+    <heading>Welcome To GeeksforGeeks</heading>
+    <book>
+        <title>Title :- DBMS Concepts</title>
+        <author>Author :- Navath</author>
+        <publisher>Publisher :- Oxford</publisher>
+        <edition>Edition :-5</edition>
+        <price>price :-600</price>
+    </book>
 
-<students>
-    <student>
-        <name>sakshi</name>
-        <age>20</age>
-        <course>Computer Engineering</course>
-    </student>
+    <book>
+        <title>Title :-Linux Programming</title>
+        <author>Author :-</author>
+        <publisher>Publisher :-Oxford</publisher>
+        <edition>Edition :-8</edition>
+        <price>price :-300</price>
+    </book>
 
-    <student>
-        <name>tejaswini</name>
-        <age>21</age>
-        <course>IT</course>
-    </student>
-</students>
+    <book>
+        <title>Title :-Web Programming</title>
+        <author>Author :-Chris Bates</author>
+        <publisher>Publisher :-Wiley</publisher>
+        <edition>Edition :-3</edition>
+        <price>price :-300</price>
+    </book>
+
+    <book>
+        <title>Title :-Internet World Wide Web</title>
+        <author>Author :-Ditel</author>
+        <publisher>Publisher :-Pearson</publisher>
+        <edition>Edition :-3</edition>
+        <price>price :-400</price>
+    </book>
+
+    <book>
+        <title>Title :-Computer Networks</title>
+        <author>Author :-Forouzan</author>
+        <publisher>Publisher :-Mc Graw Hill</publisher>
+        <edition>Edition :-5</edition>
+        <price>price :-700</price>
+    </book>
+
+</books>
+
